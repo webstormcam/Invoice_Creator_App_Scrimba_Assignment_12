@@ -1,4 +1,34 @@
 *{
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif; 
+}
+
+header,main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 550px;
+}
+
+header{
+    text-align: center;
+    background-color: #3A69D2;
+    color: #ffffff;
+    padding: 3rem 3rem;
+}
+
+h1{
+    
+    font-size: 2.5rem ;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+
 }
