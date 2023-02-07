@@ -37,6 +37,7 @@ h1{
 main{
     background-color: #1F2937;
     align-items: center;
+    min-height: 200px;
 }
 
 .task-add-area{
@@ -106,4 +107,11 @@ main{
     color: #D5D4D8;
     font-size: 0.8rem;
 }
+
+.listed-task{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 

@@ -14,7 +14,23 @@ if(taskName){
   arrayOfTasks.push(newTask)
   console.log(arrayOfTasks)
 }
+renderTasks()
+}
 
+
+
+function renderTasks(){
+    const tasks = document.getElementById('taskOutput')
+    let output=""
+    for(let currentTask of arrayOfTasks){
+output+=`<div class="listed-task">
+<div class="task-title-&-remove">
+<p class="task-word-style">${currentTask.name}</p>
+</div>
+<div class="class="task-word-style""><p><span>$</span>${currentTask.price}</p></div>
+</div>`
+    }
+    tasks.innerHTML = output
 }
 
 
