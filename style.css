@@ -36,4 +36,40 @@ h1{
 
 main{
     background-color: #1F2937;
+    align-items: center;
+}
+
+.task-add-area{
+    display: flex;
+    width: 100%;
+    max-width: 472px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.task{
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    width: 100%;
+    max-width: 326px;
+    font-size: 1.5rem;
+   
+}
+
+.priceOption{
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+    background-color: #F0F0F0;
+    width: 92px;
+    max-width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.addTask{
+    width: 52px;
+    max-width: 100%;
 }
