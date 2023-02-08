@@ -61,6 +61,10 @@ taskOutput+=`<div class="listed-task">
 </div>`
     }
     TotalAmountOutput=`
+    <div class="total-amount-style">
+    <h2 class="task-title-total">NOTES</h2>
+    <h2 class="task-title-total">TOTAL AMOUNT</h2>
+    </div>
     
     
     
@@ -69,6 +73,9 @@ taskOutput+=`<div class="listed-task">
     
     `
     tasksPlusTotal.innerHTML = taskOutput
+    tasksPlusTotal.innerHTML+=TotalAmountOutput
 }
+
+renderTasks()
 
 

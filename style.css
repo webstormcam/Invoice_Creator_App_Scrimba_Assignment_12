@@ -110,6 +110,12 @@ main{
     font-size: 0.8rem;
 }
 
+.total-amount-style .task-title-total{
+    margin-top: 1rem;
+}
+
+
+
 .listed-task{
     display: flex;
     justify-content: space-between;
@@ -149,6 +155,19 @@ main{
 .task-price-style{
     color: #ffffff;
     font-size: 1.2rem;
+}
+
+.task-output{
+    display: flex;
+    flex-direction: column;
+}
+
+.total-amount-style{
+    border-top: 1px solid #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 
