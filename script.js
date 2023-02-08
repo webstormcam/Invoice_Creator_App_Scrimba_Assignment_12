@@ -43,9 +43,9 @@ function renderTasks(){
     let output=""
     for(let i=0; i<arrayOfTasks.length; i++){
 output+=`<div class="listed-task">
-<div class="task-title-&-remove">
+<div class="task-title-and-remove">
 <p class="task-word-style">${arrayOfTasks[i].name}</p>
-<button class"remove-btn" data-item="${[i]}"> remove </button>
+<button class="remove-btn" data-item="${[i]}">Remove</button>
 </div>
 <div class="class="task-word-style""><p><span>$</span>${arrayOfTasks[i].price}</p></div>
 </div>`

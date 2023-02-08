@@ -50,8 +50,8 @@ main{
 
 .task{
     padding: 0.5rem 1rem;
-    border-bottom-left-radius: 1rem;
-    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
     width: 100%;
@@ -111,6 +111,26 @@ main{
 .listed-task{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.task-title-and-remove{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.remove-btn{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #D5D4D8;
+    margin-left: 0.3rem;
+    font-size: 0.5rem;
 }
 
 
