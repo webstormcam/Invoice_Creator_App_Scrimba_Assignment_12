@@ -20,15 +20,34 @@ renderTasks()
 
 
 
+
+
+
+function deleteItem(selectedItem){
+    arrayOfTasks.splice(selectedItem,1)
+    renderTasks()
+    }
+
+
+
+document.addEventListener('click',function(e){
+    if(e.target.dataset.item){
+        deleteItem(e.target.dataset.item)
+    }
+})
+
+
+
 function renderTasks(){
     const tasks = document.getElementById('taskOutput')
     let output=""
-    for(let currentTask of arrayOfTasks){
+    for(let i=0; i<arrayOfTasks.length; i++){
 output+=`<div class="listed-task">
 <div class="task-title-&-remove">
-<p class="task-word-style">${currentTask.name}</p>
+<p class="task-word-style">${arrayOfTasks[i].name}</p>
+<button class"remove-btn" data-item="${[i]}"> remove </button>
 </div>
-<div class="class="task-word-style""><p><span>$</span>${currentTask.price}</p></div>
+<div class="class="task-word-style""><p><span>$</span>${arrayOfTasks[i].price}</p></div>
 </div>`
     }
     tasks.innerHTML = output
