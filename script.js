@@ -3,16 +3,17 @@ const arrayOfTasks = []
 document.getElementById('addTask').addEventListener('click',addTask)
 
 function addTask(){
-const taskName = document.getElementById('task').value
+let taskName = document.getElementById('task')
 const taskPrice = document.getElementById('priceOption').value
-if(taskName){
+if(taskName.value){
     function task(name,price){
         this.name = name
         this.price = price
     }
-  const newTask = new task(taskName,taskPrice)
+  const newTask = new task(taskName.value,taskPrice)
   arrayOfTasks.push(newTask)
-  console.log(arrayOfTasks)
+  taskName.value=""
+  
 }
 renderTasks()
 }
