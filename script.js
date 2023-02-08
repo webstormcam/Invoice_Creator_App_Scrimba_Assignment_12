@@ -47,7 +47,7 @@ output+=`<div class="listed-task">
 <p class="task-word-style">${arrayOfTasks[i].name}</p>
 <button class="remove-btn" data-item="${[i]}">Remove</button>
 </div>
-<div class="class="task-word-style""><p><span>$</span>${arrayOfTasks[i].price}</p></div>
+<div class="task-price-style"><p><span class="grey-dollar">$</span>${arrayOfTasks[i].price}</p></div>
 </div>`
     }
     tasks.innerHTML = output

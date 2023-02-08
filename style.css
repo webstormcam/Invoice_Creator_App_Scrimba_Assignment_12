@@ -111,7 +111,13 @@ main{
 .listed-task{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.9rem;
+}
+
+.task-word-style{
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .task-title-and-remove{
@@ -131,6 +137,16 @@ main{
     color: #D5D4D8;
     margin-left: 0.3rem;
     font-size: 0.5rem;
+}
+
+.grey-dollar{
+    color: #918E9B;
+    font-size: 1.2rem;
+}
+
+.task-price-style{
+    color: #ffffff;
+    font-size: 1.2rem;
 }
 
 
