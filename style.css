@@ -160,6 +160,7 @@ main{
 .task-output{
     display: flex;
     flex-direction: column;
+    padding-bottom: 1.5rem;
 }
 
 .total-amount-style{
@@ -168,6 +169,27 @@ main{
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
+}
+
+.total-amount-desc-style{
+    display: flex;
+    justify-content: space-between;
+}
+
+.large-num{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.notes-txt{
+    color: #F5F5F5;
+    font-size: 0.8rem;
+}
+
+.Invoice-BTN{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 

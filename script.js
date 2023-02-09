@@ -66,10 +66,11 @@ taskOutput+=`<div class="listed-task">
     <h2 class="task-title-total">NOTES</h2>
     <h2 class="task-title-total">TOTAL AMOUNT</h2>
     </div>
-    <div>
-    <p>We accept cash, credit card, or PayPal</p>
-    <p>$${total}</p>
+    <div class="total-amount-desc-style">
+    <p class="notes-txt">We accept cash, credit card, or PayPal</p>
+    <p class="large-num">$${total}</p>
     </div>
+    <button class="Invoice-BTN">Send Invoice</button>
     `
     tasksPlusTotal.innerHTML = taskOutput
     tasksPlusTotal.innerHTML+=TotalAmountOutput
