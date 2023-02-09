@@ -1,6 +1,7 @@
-const arrayOfTasks = []
+let arrayOfTasks = []
 
 document.getElementById('addTask').addEventListener('click',addTask)
+
 
 function addTask(){
 let taskName = document.getElementById('task')
@@ -70,12 +71,29 @@ taskOutput+=`<div class="listed-task">
     <p class="notes-txt">We accept cash, credit card, or PayPal</p>
     <p class="large-num">$${total}</p>
     </div>
-    <button class="Invoice-BTN">Send Invoice</button>
+    <button id="sendInvoice" class="Invoice-BTN"> <i class="fa-solid fa-envelope"></i> Send invoice</button>
     `
     tasksPlusTotal.innerHTML = taskOutput
     tasksPlusTotal.innerHTML+=TotalAmountOutput
+    function sendTasks(){
+        arrayOfTasks = []
+        renderTasks()
+             
+       }
+    document.getElementById('sendInvoice').addEventListener('click',sendTasks)
 }
 
+
+
+
 renderTasks()
+
+
+
+
+
+
+
+
 
 
