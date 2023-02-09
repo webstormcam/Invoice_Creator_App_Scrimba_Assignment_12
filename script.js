@@ -18,7 +18,7 @@ if(taskName.value){
         this.name = name
         this.price = price
     }
-  const newTask = new task(taskName.value,taskPrice)
+  const newTask = new task(taskName.value,parseInt(taskPrice))
   arrayOfTasks.push(newTask)
   taskName.value=""
   
@@ -52,6 +52,7 @@ function renderTasks(){
     let TotalAmountOutput=""
     let total=0
     for(let i=0; i<arrayOfTasks.length; i++){
+        total+=arrayOfTasks[i].price
 taskOutput+=`<div class="listed-task">
 <div class="task-title-and-remove">
 <p class="task-word-style">${arrayOfTasks[i].name}</p>
@@ -65,12 +66,10 @@ taskOutput+=`<div class="listed-task">
     <h2 class="task-title-total">NOTES</h2>
     <h2 class="task-title-total">TOTAL AMOUNT</h2>
     </div>
-    
-    
-    
-    
-    
-    
+    <div>
+    <p>We accept cash, credit card, or PayPal</p>
+    <p>$${total}</p>
+    </div>
     `
     tasksPlusTotal.innerHTML = taskOutput
     tasksPlusTotal.innerHTML+=TotalAmountOutput
