@@ -198,6 +198,24 @@ main{
     border: none;
 }
 
+select {
+    padding: 10px;
+    padding-right: 30px;
+  
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('images/Drop-down-icon.png');
+      background-repeat: no-repeat, repeat;
+      background-position: right .7em top 50%, 0 0;
+      background-size: .85em auto, 100%;
+  }
+  
+  /* For IE (thanks to @SaiManoj) */
+  select::-ms-expand {
+    display: none;
+  }
+
 
 
 
