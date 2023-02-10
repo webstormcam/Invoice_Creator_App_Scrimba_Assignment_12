@@ -212,7 +212,7 @@ select {
       background-size: .85em auto, 100%;
   }
   
-  /* For IE (thanks to @SaiManoj) */
+  /* For IE  */
   select::-ms-expand {
     display: none;
   }
