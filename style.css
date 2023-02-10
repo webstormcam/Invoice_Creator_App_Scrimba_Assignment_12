@@ -69,9 +69,10 @@ main{
     width: 92px;
     max-width: 100%;
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding-left: 1rem;
   vertical-align: middle;
   border: none;
+  border-left: 1px solid black;
 
  
 }
