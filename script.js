@@ -2,7 +2,7 @@ let arrayOfTasks = []
 
 document.getElementById('addTask').addEventListener('click',addTask)
 
-
+// Adds the task to the total
 function addTask(){
 let taskName = document.getElementById('task')
 const taskPrice = document.getElementById('priceOption').value
@@ -31,7 +31,7 @@ renderTasks()
 
 
 
-
+// Function that will remove the item from the invoice list
 function deleteItem(selectedItem){
     arrayOfTasks.splice(selectedItem,1)
     renderTasks()
@@ -46,7 +46,7 @@ document.addEventListener('click',function(e){
 })
 
 
-
+// This renders the all of the task section of the page
 function renderTasks(){
     const tasksPlusTotal = document.getElementById('taskOutput')
     let taskOutput=""
